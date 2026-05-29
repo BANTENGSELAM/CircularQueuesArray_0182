@@ -79,6 +79,23 @@ class Queues {
                 cout << "Queue is empty\n";
                 return ;
             }
+
+            cout << "\nElement in the queue are....\n";
+
+            // jika FRONT <= REAR, iterasi dari FRONT hingga REAR
+            if (FRONT_Position <= REAR_Position)
+            {
+                while(FRONT_Position <= REAR_Position)
+                {
+                    cout << queue_array[FRONT_Position] << "  ";
+                    FRONT_Position++;
+                }
+                cout << endl;
+            }
+            else
+            {
+                
+            }
         }
 };
 
